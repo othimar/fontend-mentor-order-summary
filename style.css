@@ -1,0 +1,89 @@
+*{
+    font-family: "Red Hat Dislpay" sans-serif;
+}
+body{
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-color: hsl(225, 100%, 98%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    box-sizing: content-box;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card{
+    width: 350px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.card header img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.card-body{
+    padding: 20px;
+}
+.card-body h2{
+    text-align: center;
+    font-size: large;
+    font-weight:bold;
+    color: hsl(223, 47%, 23%);
+}
+.card-body p{
+    font-size: 14px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-weight: 200;
+}
+.item{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 14px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+}
+.item .title h3, .item .title p{
+    text-align: left;
+    margin: 0;
+}
+.item .title h3{
+    font-weight: bolder;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.item  a{
+    font-size: 14px;
+    font-weight: bolder; 
+}
+#proceed-btn, #cancel-btn{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+.card-buttons{
+    margin-top: 20px;
+}
+#proceed-btn{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+#cancel-btn{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+}
+@media (min-width: 800px){
+    body{
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+}
